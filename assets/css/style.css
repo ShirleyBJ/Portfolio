@@ -3,7 +3,7 @@ body{
     margin: 0 auto;
 }
 
-header{
+#homepage, #about-me{
     background-image: url(/assets/img/Banniere-shirleyB.png);
     background-position: center;
     background-size: cover;
@@ -13,6 +13,7 @@ header{
 
 header h1{
     visibility: hidden;
+    display: none;
 }
 
 nav{
@@ -20,7 +21,7 @@ nav{
     flex-direction: row;
     justify-content: space-around; 
     align-items: center;
-    margin: 0.5em;
+    padding: 1em;
 }
 
 nav a{
@@ -142,7 +143,7 @@ h2 {
 main{
     margin:0;
     padding:0;
-    height:100vh;
+    height:80vh;
     display: flex;
     justify-content: center;
     align-items: center;
