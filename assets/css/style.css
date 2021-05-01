@@ -1,0 +1,138 @@
+body{
+    width: 100%; 
+    margin: 0 auto;
+}
+
+header{
+    background-image: url(/assets/img/Banniere-shirleyB.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+}
+
+header h1{
+    visibility: hidden;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+    align-items: center;
+    margin: 0.5em;
+}
+
+nav a{
+    text-shadow: pink;
+    color: gray;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+nav a:hover{
+    border-bottom: 2px solid gray;
+    padding-bottom: 1px;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+}
+
+li{
+    padding: 0em 2em;
+}
+
+footer{
+    background-color:white;
+    text-align: center;
+    color:black;
+    flex:1;
+    font-weight: bold;
+}
+
+/* Title,subtitle*/
+h1 {
+    color:white;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: white underline;
+    
+}
+
+h2 {
+    color:gray;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: white underline;
+}
+
+/*JAVASCRIPT Transiton page Effect*/
+.transition-1{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index:101;
+    background-color: gray;
+    opacity:0;
+    pointer-events: none;
+    transition: 0.5s ease-out;
+}
+
+.transition-1.is-active{
+    opacity: 1;
+    pointer-events:all;
+}
+
+.transition-2{
+    position:fixed;
+    top:0;
+    left:-100%;
+    width: 100%;
+    bottom:0;
+    z-index:101;
+    background-color: gray;
+    pointer-events: none;
+    transition: 0.5s ease-out;
+}
+
+.transition-2.is-active{
+    left:0px
+}
+
+.transition-3{
+    position:fixed;
+    top:100%;
+    left:0;
+    right: 0;
+    height: 100%;
+    z-index:101;
+    background-color: gray;
+    pointer-events: none;
+    transition: 0.5s ease-out;
+}
+
+.transition-3.is-active{
+    top:0;
+}
+
+.transition-4{
+    position:fixed;
+    top:0;
+    right:-100%;
+    width: 100%;
+    bottom:0;
+    z-index:101;
+    background-color: gray;
+    pointer-events: none;
+    transition: 0.5s ease-out;
+}
+
+.transition-4.is-active{
+    right:0px
+}
